@@ -1,0 +1,40 @@
+// main: ../style.less
+
+.user {
+    display: flex;
+}
+
+.user__avatar {
+    width: 57px;
+    height: 57px;
+
+    img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 70px;
+        height: 70px;
+        padding: 0px;
+        border: solid 0px black;
+    }
+}
+
+.user__content {
+    padding-left: 20px;
+}
+
+.user__name {
+    margin-left: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+    font-size: 1.06rem;
+    line-height: 1.2;
+    color: @black;
+    font-weight: 700;
+}
+
+.user__prof {
+    margin-left: 2px;
+    font-size: 0.8rem;
+    color: fade(@black, 70%);
+}

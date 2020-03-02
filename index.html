@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="printThis.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="images/avatarka.jpg" alt="">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">
+                            Kirill <br> Bashlykov
+                        </div>
+                        <div class="user__prof">Frontend developer</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#work">work</a>
+                    <a class="nav__link" href="#about">about me</a>
+                    <a class="nav__link" href="#news">blog</a>
+                    <a class="nav__link" href="#" data-modal="#modal_hire_me">contact</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="images/burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Intro -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello i'm</h2>
+                    <h1 class="intro__title">Kirill Bashlykov</h1>
+                    <div class="intro__text">Frontend developer</div>
+                    <div class="social">
+                        <a class="social__link" href="https://github.com/qSatan1s" target="_blank">
+                            <img src="images/github.png" height="42" alt="">
+                        </a>
+                        <a class="social__link" href="https://vk.com/satan1s" target="_blank">
+                            <img src="images/vk.png" height="42" alt="">
+                        </a>
+                        <a class="social__link" href="https://www.facebook.com/satan1s" target="_blank">
+                            <img src="images/facebook.png" height="42" alt="">
+                        </a>
+                        <a class="social__link" href="https://www.instagram.com/qsatan1s/" target="_blank">
+                            <img src="images/instagram.png" height="42" alt="">
+                        </a>
+                        <a class="social__link" href="https://twitter.com/Satan1s" target="_blank">
+                            <img src="images/twitter.svg" height="42" alt="">
+                        </a>
+                    </div>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+                </div>
+                <img class="intro__photo" src="images/photo.png" alt="">
+            </div><!-- /.intro__inner -->
+        </div><!-- /.container -->
+    </section>
+    <!-- Works -->
+    <div id="work" class="works">
+        <div class="container">
+            <div class="works__nav">
+                <a class="works__nav-link" href="#" data-filter="all">All</a>
+                <a class="works__nav-link" href="#" data-filter="website">Websites</a>
+                <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
+            </div>
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/active.png" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                ActiveBox
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work__image" src="images/mogo.png" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                Mogo
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img class="work__image" src="images/prayboost.png" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                PrayBoost
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_4">
+                        <img class="work__image" src="images/spirit8.png" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                SPIRIT8
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_5">
+                        <img class="work__image" src="images/mscSkill.png" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                McSkill
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <!--    <a class="btn  btn--sm" href="#">LOAD MORE WORK</a> -->
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /.works -->
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img class="img" src="images/designer_photo.png" alt="">
+                </div>
+                <div class="about__content">
+                    <h3 class="about__title">about me</h3>
+                    <h2 class="about__bigtitle">WHO AM I</h2>
+                    <div class="about__text">
+                        <p>Hi, my name is Kirill Bashlykov. I’m 17 years old. I’m from Russia from a small town in the Urals and at the moment I am a frontend developer working freelance.</p>
+                        <p>I wrote my first "Hello world" in grade 8 at a computer science lesson in pascal, without giving any meaning to it, but after a year I began to actively study web development javascript, html, css, various libraries.</p>
+                        <p>When I was 16 I received my first order and from that moment I began to actively seek work / projects, try something new and come up with a more convenient alternative to the old one.</p>
+                    </div>
+                    <a class="btn" href="" data-modal="#modal_hire_me">HIRE ME</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+                </div><!-- /.about__content -->
+            </div><!-- /.about__inner -->
+        </div><!-- /.container -->
+    </section>
+    <!-- Reviews -->
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    <p>Хочу порекомендовать всем в качестве web-разработчика Киррилла Башлыкова. Я остался доволен выполненной им работой.</p>
+                    <p>Нашел этого исполнителя случайно на форуме объявление. В процессе выполнения работ понял, что этот программист может выполнять и более сложные задачи. В итоге полностью "довел до ума" свой сайт за разумные деньги. На сверхсложном проверить не удалось, т.к. таких задач просто не было, но все имеющиеся у меня задачи были решены хорошо. Понравилось, что на все вопросы были получены ответы и даже на не относящиеся к выполняемой работе темы. Специальных требований к срокам выполнения заданий у меня не было, но быстрота исполнения всех заданий Кириллом меня все-равно порадовала. В общем, работой остался доволен, рекомендую всем, кто ищет толкового программиста за разумные деньги.</p>
+                </div>
+                <div class="reviews__author">
+                    <img class="reviews__photo" src="images/comment.jpg" alt="">
+                    <div class="reviews__name">Виктор Фаликов</div>
+                    <div class="reviews__company">PRAYBOOST</div>
+                    <div class="reviews__rating">
+                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    </div>
+                </div>
+            </div><!-- /.reviews__item -->
+        </div><!-- /.container -->
+    </div><!-- /.reviews -->
+    <!-- News -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="news__title"> My blog</h3>
+                <div class="news__text">Sometimes i write something smart</div>
+            </div>
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <div class="articles__date">
+                                31<br>
+                                October
+                            </div>
+                            <a href="#" target="blank">
+                                <img class="articles__photo" src="images/blog1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a href="#" target="blank">Portfolio Website</a>
+                            </h4>
+                            <div class="articles__cat">Idea</div>
+                            <div class="articles__text">
+                                <p>4 утра идеальное время чтобы начать изучать новый язык программирования, 3d-пакет, завершить недоделанную работу, посмотреть фильм, который давно хотел посмотреть, начать писать свою книгу, сделать наконе...</p>
+                            </div>
+                        </div>
+                        <a class="btn  btn--sm" href="#" target="blank">READ MORE</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <div class="articles__date">
+                                26<br>October
+                            </div>
+                            <a href="#" target="blank">
+                                <img class="articles__photo" src="images/blog.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a href="#" target="blank">Why it is important to know the basics</a>
+                            </h4>
+                            <div class="articles__cat">
+                            thoughts</div>
+                            <div class="articles__text">
+                                <p>Моё мнение о пробном экзамене по информатики на компьютере, в чём плюсы/минусы? Мои идеи по улучшению этого экзамена.</p>
+                            </div>
+                        </div>
+                        <a class="btn  btn--sm" href="#" target="blank">READ MORE</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <div class="articles__date">
+                                24<br>October
+                            </div>
+                            <a href="#.html" target="blank">
+                                <img class="articles__photo" src="images/blog3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a href="#" target="blank">
+                                The best projects for 6 months</a>
+                            </h4>
+                            <div class="articles__cat">
+                            thoughts</div>
+                            <div class="articles__text">
+                                <p>Мой путь в frontend, который я прошёл за 6 месяцев, как я начинал, чем мотивировался, интереснные проекты и идеи, которые хотелось бы реализовтаь в ближайшее время</p>
+                            </div>
+                        </div>
+                        <a class="btn  btn--sm" href="#" target="blank">READ MORE</a>
+                    </div>
+                </div>
+            </div><!-- /.articles -->
+            <div class="news__footer">
+                <a class="news__link" href="https://twitter.com/Satan1s" target="blank">See more posts</a>
+            </div>
+        </div><!-- /.container -->
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        &copy; 2019 superman -
+                        qsatan1s
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://github.com/qSatan1s" target="_blank">
+                            <img src="images/github-gray.png" width="21" alt="">
+                        </a>
+                        <a href="https://vk.com/satan1s" target="_blank">
+                            <img src="images/vk-gray.png" width="28" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/satan1s" target="_blank">
+                            <img src="images/fb-gray.svg" height="18" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/qsatan1s/" target="_blank">
+                            <img src="images/instagram-gray.svg" width="18" alt="">
+                        </a>
+                        <a href="https://twitter.com/Satan1s" target="_blank">
+                            <img src="images/twitter-gray.svg" width="20" alt="">
+                        </a>
+                    </div>
+                </div><!-- /.footer__credits -->
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#">Work</a>
+                    <a class="footer__nav-link" href="#">About me</a>
+                    <a class="footer__nav-link" href="#">Blog</a>
+                    <a class="footer__nav-link  footer__nav-link--btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                </nav>
+            </div><!-- /.footer__inner -->
+        </div><!-- /.container -->
+    </footer>
+    <!-- Modals -->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/active1.png" height="620" width="800" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/active2.png" height="620" width="800" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2019
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">
+                        my free time</div>
+                        <a class="nav__link_1" href="https://qsatan1s.github.io/active/" target="_blank">Link</a>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>
+                        Completely made up the whole site html / css + added a small js code" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</p>
+                        <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/mogo2.png" height="620" width="800" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/mogo3.png" height="620" width="800" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Mogo</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2019
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">
+                        my free time</div>
+                        <a class="nav__link_1" href="https://qsatan1s.github.io/Mogoqwer/" target="_blank">Link</a>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>
+                        Completely made up the whole site html / css + added a small js code" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</p>
+                        <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/prayboost1.png" height="620" width="800" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/prayboost2.png" height="620" width="800" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">PrayBoost</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2019
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">
+                        PrayBoost</div>
+                        <a class="nav__link_1" href="https://prayboost.com/" target="_blank">Link</a>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>
+                        Completed the entire front-end part, added a “boost calculator" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</p>
+                        <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+    <div class="modal" id="modal_project_4">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/spirit81.png" height="620" width="800" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/spirit82.png" height="620" width="800" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">SPIRIT8</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2019
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">
+                        my free time</div>
+                        <a class="nav__link_1" href="https://qsatan1s.github.io/SPIRIT8/" target="_blank">Link</a>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>
+                        Completely made up the whole site html / css + added a small js code" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</p>
+                        <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+    <div class="modal" id="modal_project_5">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/mcsckill2.png" height="620" width="800" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/mcskill3.png" height="620" width="800" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">McSkill</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2019
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">
+                        McSkill</div>
+                        <a class="nav__link_1" href="https://mcskill.ru/" target="_blank">Link</a>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>
+                        Developed a design and wrote the code myself, from the very beginning &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</p>
+                        <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal__content">
+                <h3 class="modal__title  text-center">RESUME</h3>
+                <div class="text-center">
+                    <a class="btn btn--thin" href="http://file-st01.karelia.ru/79vns4/dad56b3593a6236aae076a44c3ffa4aa/845966e1045fad5c7946e0e1d6a03bad/Portfolio.pdf?force">DOWNLOAD PDF</a>
+                    <a id="basic" href="#modal_resume" class="btn btn--thin">Print</a>
+                    <div class="demo twelve columns">
+                        <div class="resume_print">
+                            <div class="my_name">Kirill Bashlykov</div>
+                            <div class="my_photo">
+                                <img class="my_photo" src="https://i.ibb.co/NjxtmJh/photo2.jpg" height="150" alt="">
+                                <style>
+                                    .my_name {
+                                        font-size: 35px;
+                                        font-weight: 700;
+                                        padding-top: 60px;
+                                        padding-right: 225px;
+                                        text-align: right;
+                                    }
+                                    .my_photo {
+                                     position: absolute; /* Абсолютное позиционирование */
+                                     right: 15px; /* Положение от правого края */
+                                     overflow: hidden;
+                                     width: 200px;
+                                     height: 250px;
+                                     top: 10px;
+                                     
+                                 }
+                                 .my_profession{
+                                     margin: 5px;
+                                     padding-left: 310px;
+                                     padding-top: 15px;
+                                 }
+
+                                 .my_born{
+                                    padding-left: 325px;
+                                    margin: 5px;
+                                    padding-top: 0px;
+                                }
+                                .my_email{
+                                    padding-left: 270px;
+                                    margin: 5px;
+                                    padding-top: 0px;
+                                }
+                                .Skill_skill{
+                                    font-weight: 700;
+                                    padding-left: 200px;
+                                    margin: 5px;
+                                    padding-top: 0px;
+                                }
+                                .about_me {
+                                    margin-top: 50px;
+                                    
+                                }
+                                .about_me_g{
+                                    font-weight: 700;
+                                }
+                                .additional_information{
+                                    font-weight: 700;
+                                }
+                            </style>
+                        </div>
+                        <div class="my_profession">
+                            I am- <span class="frontend_developer">frontend developer</span>
+                        </div>
+                        <div class="my_born">
+                            I was born <span class="frontend_developer">22.02.2002</span>
+                        </div>
+                        <div class="my_email">
+                            My email <span class="frontend_developer">qSatan1s@yandex.ru</span>
+                        </div>
+                        <div class="Skill">
+                            <span class="Skill_skill">SKiill: </span><i> JavaScript/ES6, HTML5/CSS3,<br>jQuery, English language, photoshop, Media queries, php, preprocessors. </i>
+                        </div>
+                        <div class="about_me">
+                            <span class="about_me_g">About me:</span> <br>Front-end developer. I have strong knowledge of HTML5, CSS3 and <br> JS (ES6 +) <br><br> Hobbies and interests: at the moment, I am completely immersed in programming and devote all my free time to writing code, I am actively engaged in self-education, I look through various courses, articles, read books. <br><br> I am ready to improve old and learn new technologies. I am interested in IT development. High self-motivation. Confident PC user. I own the full Microsoft Office suite, English Level B1.
+                            <br><br><br> <span class="additional_information">Additional information: </span><br>
+                            <b> marital status:</b> Not maried<br><br>
+                            <b>no bad habits </b> (I don’t drink or smoke absolutely categorically), I go in for sports <br><br>
+                            <b>About me:</b> At the moment I do not work.<br><br>
+                            Interested in vacancies frontend developer, JavaScript developer. Also ready to take internships
+                            in the field of information technology
+                        </div>
+                    </div>
+                </div>
+                    <!-- End Document
+                      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                      <!-- jQuery -->
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <!-- printThis -->
+                      <script src="printThis.js"></script>
+                      <!-- demo -->
+                      <script>
+                        $('#basic').on("click", function () {
+                          $('.demo').printThis({
+                            base: "https://jasonday.github.io/printThis/"
+                        });
+                      });
+                        
+                        
+                        $('#advanced').on("click", function () {
+                          $('#kitty-one, #kitty-two, #kitty-three').printThis({
+                            importCSS: false,
+                            header: "<h1>Look at all of my kitties!</h1>",
+                            base: "https://jasonday.github.io/printThis/"
+                        });
+                      });
+                  </script>
+                  <!-- Global site tag (gtag.js) - Google Analytics -->
+                  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114774247-1"></script>
+                  <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    
+                    gtag('config', 'UA-114774247-1');
+                </script>
+            </div>
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+                    <h4 class="timeline__title">EXPERIENCE</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2018 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Frontend</div>
+                        <div class="timeline__text">
+                            <p>
+                            Worked Frontend developer and typesetter</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2019 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Frontend</div>
+                        <div class="timeline__text">
+                            <p>Worked Frontend developer and typesetter. <br> Full immersion in Frontend</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2019 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Frontend</div>
+                        <div class="timeline__text">
+                            <p>Worked Frontend developer and typesetter.
+                            Implementation of serious projects together with a team that have been successfully implemented and went into production</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__col  timeline__col--right">
+                    <h4 class="timeline__title">EDUCATION</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2016 - 2017</time>
+                        <h5 class="timeline__subtitle">
+                            My first program
+                        "Hello World"</h5>
+                        <div class="timeline__position">high school</div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2017 - 2018</time>
+                        <h5 class="timeline__subtitle">
+                        Full immersion in JavaScript</h5>
+                        <div class="timeline__position">
+                        self development</div>
+                    </div>
+                    <h4 class="timeline__title">Skills</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">
+                                frameworks</div>
+                            </div>
+                            <div class="progress-bar__right_1">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">HTML/CSS</div>
+                            </div>
+                            <div class="progress-bar__right_2">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">frontend</div>
+                            </div>
+                            <div class="progress-bar__right_3">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.progress-bar -->
+                    <h4 class="timeline__title">Awards</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2018</time>
+                        <h5 class="timeline__subtitle"> programming</h5>
+                        <div class="timeline__position">
+                        Yekaterinburg, Sverdlovsk region, RU</div>
+                        <div class="timeline__text">
+                            <p>
+                            Prizewinner of the regional programming olympiad</p>
+                        </div>
+                    </div>
+                </div><!-- /.timeline__col -->
+            </div><!-- /.timeline -->
+            <div class="text-center">
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+            </div>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+        <div class="contact">
+            <div class="contact__left">
+                <img class="hire_me_photo" src="images/hire_me.jpg" alt="img">
+                <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/skype.png" height="20" alt="">
+                        qSatan1s
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.svg" alt="">
+                        qSatan1s@yandex.ru
+                    </li>
+                </ul>
+                <form class="form" action="mail.php" method="POST">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Adress e-mail</label>
+                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Request</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn" id='sendMail' onclick='document.getElementById("div").style.display = "block";' type="submit">SEND</button>
+                        <div style='display:none' id="div">Сообщение успешно отправленно</div>
+                    </div>
+                </form>
+                </div>
+            <div>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/mail.js"></script>
+</body>
+
+</html>
